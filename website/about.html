@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sunshine Daycare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-purple-400 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold text-white">Sunshine Daycare</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white hover:underline">Home</a>
+                <a href="about.html" class="text-white hover:underline">About Us</a>
+                <a href="admissions.html" class="text-white hover:underline">Admissions</a>
+                <a href="contact.html" class="text-white hover:underline">Contact</a>
+            </nav>
+            <button class="md:hidden text-white">Menu</button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mx-auto my-12 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6" data-aos="fade-up">About Sunshine Daycare</h2>
+        <p class="text-gray-600 text-center mb-12" data-aos="fade-up">
+            Sunshine Daycare is committed to providing a nurturing and safe environment where children can grow, learn, and thrive. Our team of experienced professionals ensures the best care for your little ones.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Mission -->
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                <h3 class="text-xl font-semibold">Our Mission</h3>
+                <p class="mt-2 text-gray-600">
+                    To create a safe and engaging environment that supports every child's development and curiosity.
+                </p>
+            </div>
+            <!-- Vision -->
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                <h3 class="text-xl font-semibold">Our Vision</h3>
+                <p class="mt-2 text-gray-600">
+                    To be a trusted partner for families in shaping the future of their children.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-400 text-white text-center py-4">
+        <p>&copy; 2024 Sunshine Daycare. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Daycare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-purple-400 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold text-white">Sunshine Daycare</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white hover:underline">Home</a>
+                <a href="about.html" class="text-white hover:underline">About Us</a>
+                <a href="admissions.html" class="text-white hover:underline">Admissions</a>
+                <a href="contact.html" class="text-white hover:underline">Contact</a>
+            </nav>
+            <button class="md:hidden text-white">Menu</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-purple-100 py-20 text-center">
+        <h1 class="text-4xl font-bold">Welcome to Sunshine Daycare</h1>
+        <p class="mt-4 text-gray-600">A safe and joyful place for your child to learn and grow.</p>
+        <a href="admissions.html" class="mt-6 inline-block bg-purple-500 text-white px-6 py-3 rounded-lg hover:bg-purple-600">
+            Register Now
+        </a>
+    </section>
+
+    <!-- Features -->
+    <section class="container mx-auto py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+            <h3 class="text-xl font-semibold">Engaging Programs</h3>
+            <p class="mt-2">Age-appropriate activities for learning and creativity.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+            <h3 class="text-xl font-semibold">Nutritious Meals</h3>
+            <p class="mt-2">Healthy meals to keep children energized and focused.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+            <h3 class="text-xl font-semibold">Experienced Staff</h3>
+            <p class="mt-2">Certified professionals ensuring a nurturing environment.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+            <h3 class="text-xl font-semibold">Convenient Location</h3>
+            <p class="mt-2">Easily accessible from anywhere in Toronto.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold">What Parents Say</h2>
+            <div class="mt-6 space-y-6">
+                <!-- Swiper Container -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial Slide 1 -->
+                        <div class="swiper-slide">
+                            <blockquote class="bg-white shadow-md rounded-lg p-6">
+                                <p>"Sunshine Daycare has been a blessing for our family. Our child loves it!"</p>
+                                <footer class="mt-4 text-gray-600">- Jane D.</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Testimonial Slide 2 -->
+                        <div class="swiper-slide">
+                            <blockquote class="bg-white shadow-md rounded-lg p-6">
+                                <p>"The staff is amazing, and we feel so confident leaving our child here."</p>
+                                <footer class="mt-4 text-gray-600">- Mark S.</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Testimonial Slide 3 -->
+                        <div class="swiper-slide">
+                            <blockquote class="bg-white shadow-md rounded-lg p-6">
+                                <p>"A wonderful experience, and I highly recommend Sunshine Daycare to other parents!"</p>
+                                <footer class="mt-4 text-gray-600">- Sarah W.</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Swiper Pagination and Navigation -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-400 text-white text-center py-4">
+        <p>&copy; 2024 Sunshine Daycare. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper for Testimonials
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,         // Show 1 slide at a time
+            spaceBetween: 10,         // Space between slides (in px)
+            loop: true,               // Loop slides infinitely
+            autoplay: {
+                delay: 3000,          // Auto slide every 3 seconds
+                disableOnInteraction: false, // Continue autoplay even if the user interacts
+            },
+            pagination: {
+                el: '.swiper-pagination', // Enable pagination
+                clickable: true,          // Make pagination clickable
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',  // Next slide button
+                prevEl: '.swiper-button-prev',  // Previous slide button
+            },
+        });
+
+        // Initialize AOS (for animations)
+        AOS.init();
+    </script>
+
+</body>
+</html>
